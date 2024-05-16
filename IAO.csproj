@@ -131,6 +131,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HelperClasses\SubjectAndMarks.cs" />
     <Compile Include="Models\UserApplicant.cs" />
     <Compile Include="Models\ApplicantUser\SchoolBackground.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

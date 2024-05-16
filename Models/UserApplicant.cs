@@ -22,12 +22,10 @@ namespace IAO.Models
         public string Password { get; set;}
         [Compare("ConfirmPassword", ErrorMessage = "The password and confirmation password do not match")]
         public string ConfirmPassword { get; set; }
-        public SchoolBackground SchoolBackground { get; set; }
 
 
 
-
-
+        /***  !!!METHODS * **/
         public static string HashPassword(string password)
         {
             byte[] salt;

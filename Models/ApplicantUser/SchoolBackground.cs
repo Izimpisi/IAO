@@ -16,10 +16,8 @@ namespace IAO.Models.ApplicantUser
 
         [Required]
         public string SchoolName { get; set; }
+
         [Required]
-        public string[] subjects { get; set; }
-
-        public UserApplicant UserApplicant { get; set; }
-
+        public SubjectAndMarks[] SubjectAndMarks { get; set; }
     }
 }
