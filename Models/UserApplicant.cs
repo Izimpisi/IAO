@@ -24,6 +24,9 @@ namespace IAO.Models
         public string ConfirmPassword { get; set; }
 
 
+        //foreign keys
+        public SchoolBackground SchoolBackground { get; set; }
+
 
         /***  !!!METHODS * **/
         public static string HashPassword(string password)

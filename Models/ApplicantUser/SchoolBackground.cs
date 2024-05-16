@@ -12,12 +12,15 @@ namespace IAO.Models.ApplicantUser
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int UserId { get; set; }
-
+       
         [Required]
         public string SchoolName { get; set; }
 
         [Required]
         public SubjectAndMarks[] SubjectAndMarks { get; set; }
+
+        //foreign keys
+        public UserApplicant UserApplicant { get; set; }
+        public int UserId { get; set; }
     }
 }

@@ -128,10 +128,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserApplicantsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\HelperClasses\SubjectAndMarks.cs" />
+    <Compile Include="Models\ApplicantUser\SubjectAndMarks.cs" />
+    <Compile Include="Models\IAODBContext.cs" />
     <Compile Include="Models\UserApplicant.cs" />
     <Compile Include="Models\ApplicantUser\SchoolBackground.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -187,6 +189,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\UserApplicants\Create.cshtml" />
+    <Content Include="Views\UserApplicants\Delete.cshtml" />
+    <Content Include="Views\UserApplicants\Details.cshtml" />
+    <Content Include="Views\UserApplicants\Edit.cshtml" />
+    <Content Include="Views\UserApplicants\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
